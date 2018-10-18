@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="11.80" multi-file="no" uid="simp1961253604814222b0431b9ac83c420a">
+  <meta>
+    <name>Montebank</name>
+    <authors>Зухритдинов Амирхон</authors>
+    <description>Диаграмма последовательности игры Montebank</description>
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="lifeline" type="UmlLifeline" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="actor" type="UmlActor" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="activation-bar" type="ConcreteUmlActivationBar" />
+        <value>12</value>
+      </counter>
+      <counter>
+        <item-type type-id="sequence-action" type="UmlSequenceAction" />
+        <value>37</value>
+      </counter>
+      <counter>
+        <item-type type-id="activation-bar" type="UmlActivationBar" />
+        <value>20</value>
+      </counter>
+      <counter>
+        <item-type type-id="fragment" type="UmlFragment" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="interaction-operand" type="UmlInteractionOperand" />
+        <value>4</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="" type="AbstractElementGroup" />
+        <value>890</value>
+      </counter>
+      <counter>
+        <item-type type-id="lifeline" type="UmlLifeline" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="actor" type="UmlActor" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="activation-bar" type="UmlActivationBar" />
+        <value>26</value>
+      </counter>
+      <counter>
+        <item-type type-id="sequence-action" type="UmlSequenceAction" />
+        <value>38</value>
+      </counter>
+      <counter>
+        <item-type type-id="comment" type="UmlComment" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="comment-connector" type="UmlCommentConnector" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="fragment" type="UmlFragment" />
+        <value>4</value>
+      </counter>
+      <counter>
+        <item-type type-id="universal-connector" type="UniversalConnector" />
+        <value>12</value>
+      </counter>
+      <counter>
+        <item-type type-id="interaction-operand" type="UmlInteractionOperand" />
+        <value>5</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlSequenceDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields />
+  </counters>
+  <alias-groups />
+  <management uid="md-36776d21b590416684695c95215037de" name="" task-id-sequence="0">
+    <persons>
+      <person id="Pb20623b0fee4415a849117d52eab91d2">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-3ca6e4b52fc940b187db297ce9fd6b8b" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types />
+  </types>
+  <items>
+    <item id="ddb671bde8004b97b8d30ead94d17cb9" cid="IOP002" type="interaction-operand" name="InteractionOperand2" style-class="" visibility="package" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:24:48">
+      <style class="default" />
+      <interaction-operand guard="Пока все игроки не сделают ставку" />
+    </item>
+    <item id="78c53a015efa48bd89fb327831ad943b" cid="IOP001" type="interaction-operand" name="InteractionOperand1" style-class="" visibility="package" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:22:33">
+      <style class="default" />
+      <interaction-operand guard="Если кто-то из игроков выирал" />
+    </item>
+    <item id="c212128176bf42e7865605be6d67aa41" cid="IOP003" type="interaction-operand" name="InteractionOperand3" style-class="" visibility="package" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:28:21">
+      <style class="default" />
+      <interaction-operand guard="Если никто из игроков не выиграл" />
+    </item>
+    <item id="7810087c2cb4471faac626b21856d4dc" cid="IOP004" type="interaction-operand" name="InteractionOperand4" style-class="" visibility="package" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:30:40">
+      <style class="default" />
+      <interaction-operand guard="Если сессия закончилась" />
+    </item>
+  </items>
+  <models>
+    <model id="p1cea9dfb27d948d1b2bedca8ffedb85f_139153466" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>10/18/2018 13:40:52</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-sequence" id="p3d8a26aa37ee4ba4a12b42955b61effb_853877755" name="SequenceDiagram1" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-10,681">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>10/18/2018 13:40:52</creation-date>
+          <change-date>10/18/2018 15:45:48</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="d0f13b8052a94c1aa53d6db796461ad3" cid="LL001" type="lifeline" name="Банкомет" style-class="" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 13:41:01">
+            <style class="default" />
+            <lifeline classifier-name="" is-active="false" is-multi-object="false" />
+          </item>
+          <item id="cf2b40e9b91f48dd99ff47ebe4e1eb39" cid="AC002" type="actor" name="Игрок" style-class="" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 13:41:21">
+            <style class="default" />
+          </item>
+          <item id="7fac25e50bdf4c83a1a79d4944df5053" cid="LL002" type="lifeline" name="Сессия" style-class="" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 13:50:13">
+            <style class="default" />
+            <lifeline classifier-name="" is-active="false" is-multi-object="false" />
+          </item>
+          <item id="3801d0f732a54cb19c3ae102bcc1d04e" cid="AB001" type="activation-bar" name="ExecutionOccurrence1" style-class="" owner="cf2b40e9b91f48dd99ff47ebe4e1eb39" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 14:53:12">
+            <style class="default" />
+          </item>
+          <item id="928e4424216349178549945a1fdea862" cid="SM002" type="sequence-action" name="Message2" style-class="" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 14:53:45">
+            <style class="default" />
+            <sequence-action type="call" message="Согласовать пределы ставок" is-asynchronous="false" from="3801d0f732a54cb19c3ae102bcc1d04e" to="944455312a7243a49bed368ef100cc69" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="944455312a7243a49bed368ef100cc69" cid="AB003" type="activation-bar" name="ExecutionOccurrence3" style-class="" owner="7fac25e50bdf4c83a1a79d4944df5053" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 14:53:45">
+            <style class="default" />
+            <activation-bar lifeline-ref="7fac25e50bdf4c83a1a79d4944df5053" />
+          </item>
+          <item id="330d55edbb2d48828485212ca213ce2f" cid="SM005" type="sequence-action" name="Message5" style-class="" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 14:58:36">
+            <style class="default" />
+            <sequence-action type="send" message="Раздать карты" is-asynchronous="false" from="3d55769f2b0c4dcaa771691888940ceb" to="944455312a7243a49bed368ef100cc69" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="3d55769f2b0c4dcaa771691888940ceb" cid="AB004" type="activation-bar" name="ExecutionOccurrence4" style-class="" owner="d0f13b8052a94c1aa53d6db796461ad3" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 14:58:36">
+            <style class="default" />
+            <activation-bar lifeline-ref="d0f13b8052a94c1aa53d6db796461ad3" />
+          </item>
+          <item id="f7d733ed617f4f72a415a09c9204e320" cid="AB005" type="activation-bar" name="ExecutionOccurrence5" style-class="" owner="cf2b40e9b91f48dd99ff47ebe4e1eb39" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:05:27">
+            <style class="default" />
+          </item>
+          <item id="068c621179164020b0050c4a88a85777" cid="SM006" type="sequence-action" name="Message6" style-class="" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:05:27">
+            <style class="default" />
+            <sequence-action type="call" message="Сделать ставку" is-asynchronous="false" from="f7d733ed617f4f72a415a09c9204e320" to="f7d733ed617f4f72a415a09c9204e320" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="18895a6668bb46c08181767ea03c4441" cid="SM010" type="sequence-action" name="Message10" style-class="" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:16:38">
+            <style class="default" />
+            <sequence-action type="call" message="Назначить ход" is-asynchronous="false" from="c323256ad86947e1a4a015bc8f59cfc9" to="f7d733ed617f4f72a415a09c9204e320" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="c323256ad86947e1a4a015bc8f59cfc9" cid="AB008" type="activation-bar" name="ExecutionOccurrence6" style-class="" owner="7fac25e50bdf4c83a1a79d4944df5053" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:16:21">
+            <style class="default" />
+            <activation-bar lifeline-ref="7fac25e50bdf4c83a1a79d4944df5053" />
+          </item>
+          <item id="c6181c3e9d9849668f5f44ffa7d06e28" cid="AB009" type="activation-bar" name="ExecutionOccurrence7" style-class="" owner="d0f13b8052a94c1aa53d6db796461ad3" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:18:06">
+            <style class="default" />
+            <activation-bar lifeline-ref="d0f13b8052a94c1aa53d6db796461ad3" />
+          </item>
+          <item id="2af933afb8494b66a7878cc798120962" cid="SM011" type="sequence-action" name="Message11" style-class="" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:18:06">
+            <style class="default" />
+            <sequence-action type="call" message="Собрать ставки игроков себе" is-asynchronous="false" from="c6181c3e9d9849668f5f44ffa7d06e28" to="c6181c3e9d9849668f5f44ffa7d06e28" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="5322ed7c33a843b6a19f1e75b1f88ff8" cid="FR001" type="fragment" name="jhi" style-class="" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:19:02">
+            <style style-name="Default" shadow-type="smooth" shadow-offset="1,1" shadow-visible="true" shadow-color="#32000000" gloss-effect="true" wrap-name-text="true" wrap-other-text="true" padding="1" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+              <text-style type="name" use-defaults="false" color="#FF000000" font="Verdana;10;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="text" use-defaults="false" color="#FF000000" font="Verdana;9;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+              <text-style type="tagged-value" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="stereotype" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <background type="forward-diagonal" color="#FFFFFFFF" color2="#FFEBEBEB" />
+              <border color="#FF000000" width="1" dash-style="Solid" />
+              <label-connector color="#80000000" width="1" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="1,1" shadow-color="#32000000" gloss-effect="true" wrap-name-text="true" padding="1" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+                  <text-style type="name" use-defaults="false" color="#FFFFFFFF" font="Verdana;10;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="text" use-defaults="false" color="#FFFFFFFF" font="Verdana;9;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+                  <text-style type="tagged-value" use-defaults="false" color="#FFFFFFFF" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="stereotype" use-defaults="false" color="#FFFFFFFF" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <background type="solid" color="#FF2B508B" color2="#FF87CEFA" />
+                  <border color="#FF2B508B" width="1" dash-style="Solid" />
+                  <label-connector color="#FF000000" width="1" dash-style="Solid" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
+            <fragment operator="opt">
+              <operands>
+                <operand uid="78c53a015efa48bd89fb327831ad943b" />
+                <operand uid="c212128176bf42e7865605be6d67aa41" />
+              </operands>
+            </fragment>
+          </item>
+          <item id="23ad221b190e4d74b36e24164ef39056" cid="FR002" type="fragment" name="Fragment2" style-class="" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:24:44">
+            <style class="default" />
+            <fragment operator="loop">
+              <operands>
+                <operand uid="ddb671bde8004b97b8d30ead94d17cb9" />
+              </operands>
+            </fragment>
+          </item>
+          <item id="557903499bd44cc2a97a12074acf2edc" cid="FR003" type="fragment" name="Fragment3" style-class="" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:30:16">
+            <style class="default" />
+            <fragment operator="opt">
+              <operands>
+                <operand uid="7810087c2cb4471faac626b21856d4dc" />
+              </operands>
+            </fragment>
+          </item>
+          <item id="d8b16603224e40d9ae86d4c6f50741be" cid="AB010" type="activation-bar" name="ExecutionOccurrence8" style-class="" owner="7fac25e50bdf4c83a1a79d4944df5053" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:34:11">
+            <style class="default" />
+            <activation-bar lifeline-ref="7fac25e50bdf4c83a1a79d4944df5053" />
+          </item>
+          <item id="2f496f30ba4444a9a92e1d07fccef444" cid="SM012" type="sequence-action" name="Message12" style-class="" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:34:17">
+            <style class="default" />
+            <sequence-action type="call" message="Раздать деньги" is-asynchronous="false" from="74abc1cfbe5146018b35f61dfce42680" to="d8b16603224e40d9ae86d4c6f50741be" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="74abc1cfbe5146018b35f61dfce42680" cid="AB011" type="activation-bar" name="ExecutionOccurrence9" style-class="" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:34:17">
+            <style class="default" />
+            <activation-bar lifeline-ref="d0f13b8052a94c1aa53d6db796461ad3" />
+          </item>
+          <item id="1c9c0c08a5ce407d86bbe300d8ec65df" cid="AB013" type="activation-bar" name="ExecutionOccurrence10" style-class="" owner="cf2b40e9b91f48dd99ff47ebe4e1eb39" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:35:23">
+            <style class="default" />
+          </item>
+          <item id="4ad93a413d2e4d3bb7385b474850cce2" cid="SM016" type="sequence-action" name="Message16" style-class="" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:35:26">
+            <style class="default" />
+            <sequence-action type="call" message="Распределить сумму по игрокам" is-asynchronous="false" from="d8b16603224e40d9ae86d4c6f50741be" to="1c9c0c08a5ce407d86bbe300d8ec65df" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="2d524153ae724330b97bec7398f01430" cid="AB022" type="activation-bar" name="ExecutionOccurrence19" style-class="" owner="d0f13b8052a94c1aa53d6db796461ad3" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:37:44">
+            <style class="default" />
+            <activation-bar lifeline-ref="d0f13b8052a94c1aa53d6db796461ad3" />
+          </item>
+          <item id="c3cae27e21b54c3e904f02121bfa2f06" cid="SM036" type="sequence-action" name="Message36" style-class="" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:37:44">
+            <style class="default" />
+            <sequence-action type="call" message="Собрать карты" is-asynchronous="false" from="2d524153ae724330b97bec7398f01430" to="2d524153ae724330b97bec7398f01430" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="2db6dbbca5f74643aa8f7ecd6c33dfe2" cid="SM037" type="sequence-action" name="Message37" style-class="" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:45:44">
+            <style class="default" />
+            <sequence-action type="call" message="Показать карту ворот" is-asynchronous="false" from="4477411316554e99b3024b0495aeff88" to="c323256ad86947e1a4a015bc8f59cfc9" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="4477411316554e99b3024b0495aeff88" cid="AB025" type="activation-bar" name="ExecutionOccurrence20" style-class="" owner="d0f13b8052a94c1aa53d6db796461ad3" visibility="package" change-tracking-state="added" creator="Pb20623b0fee4415a849117d52eab91d2" creation-date="10/18/2018 15:45:44">
+            <style class="default" />
+            <activation-bar lifeline-ref="d0f13b8052a94c1aa53d6db796461ad3" />
+          </item>
+        </abstract-items>
+        <layer id="8e00733b22c946dfa57111a746399bcf" name="Default" visible="true" enabled="true" locked="false">
+          <item id="d0f13b8052a94c1aa53d6db796461ad3" iid="f1f8e2b36e274636a0c01a5589c678f9" anchor="None" creation-date="10/18/2018 13:41:01" order-index="0" type="lifeline">
+            <layout ax="573" ay="50" awidth="140" aheight="1085" x="573" y="50" width="140" height="1085" container-layout="simple" />
+          </item>
+          <item id="cf2b40e9b91f48dd99ff47ebe4e1eb39" iid="22d8bb3943a94bb3b15b572c9f9b4294" anchor="None" creation-date="10/18/2018 13:41:21" order-index="1" type="lifeline">
+            <layout ax="21" ay="50" awidth="140" aheight="1085" x="21" y="50" width="140" height="1085" container-layout="simple" />
+          </item>
+          <item id="7fac25e50bdf4c83a1a79d4944df5053" iid="537ebec94f1a403ab3a0aeafc5be3384" anchor="None" creation-date="10/18/2018 13:50:13" order-index="2" type="lifeline">
+            <layout ax="295" ay="50" awidth="140" aheight="1085" x="295" y="50" width="140" height="1085" container-layout="simple" />
+          </item>
+          <item id="3801d0f732a54cb19c3ae102bcc1d04e" iid="daed55ae69564082964ac0aed26d3714" container="cf2b40e9b91f48dd99ff47ebe4e1eb39" container-iid="22d8bb3943a94bb3b15b572c9f9b4294" anchor="None" creation-date="10/18/2018 14:53:12" order-index="3" type="entity">
+            <layout ax="81" ay="147" awidth="20" aheight="81.25" x="81" y="147" width="20" height="81.25" />
+          </item>
+          <item id="928e4424216349178549945a1fdea862" iid="dc29847b412d43a9aaff03482dc8ff46" creation-date="10/18/2018 14:53:45" order-index="4" type="sequence-action">
+            <layout x1="101" y1="147" x2="355" y2="147" ax="101" ay="132" awidth="254" aheight="20" x="101" y="132" width="254" height="20" message-x="0" message-y="-10" />
+            <sequence-action from="3801d0f732a54cb19c3ae102bcc1d04e" to="944455312a7243a49bed368ef100cc69" show-sequence-number="false" />
+          </item>
+          <item id="944455312a7243a49bed368ef100cc69" iid="fbaad070e0d0467ca4581fa570ed7b2a" container="7fac25e50bdf4c83a1a79d4944df5053" container-iid="537ebec94f1a403ab3a0aeafc5be3384" creation-date="10/18/2018 14:53:45" order-index="5" type="entity">
+            <layout ax="355" ay="140" awidth="20" aheight="88.25" x="355" y="140" width="20" height="88.25" />
+          </item>
+          <item id="330d55edbb2d48828485212ca213ce2f" iid="5572dfed90984daaa54e24a1ffcd9f38" creation-date="10/18/2018 14:58:36" order-index="6" type="sequence-action">
+            <layout x1="633" y1="186.75" x2="375" y2="186.75" ax="375" ay="171.75" awidth="258" aheight="20" x="375" y="171.75" width="258" height="20" message-x="0" message-y="-10" />
+            <sequence-action from="3d55769f2b0c4dcaa771691888940ceb" to="944455312a7243a49bed368ef100cc69" show-sequence-number="false" />
+          </item>
+          <item id="3d55769f2b0c4dcaa771691888940ceb" iid="38f2a3d8549b4ab79370ade0a2eaa5fc" container="d0f13b8052a94c1aa53d6db796461ad3" container-iid="f1f8e2b36e274636a0c01a5589c678f9" creation-date="10/18/2018 14:58:36" order-index="7" type="entity">
+            <layout ax="633" ay="186.75" awidth="20" aheight="83" x="633" y="186.75" width="20" height="83" />
+          </item>
+          <item id="f7d733ed617f4f72a415a09c9204e320" iid="58c322a8bf714889aec16c4627a6ed09" container="cf2b40e9b91f48dd99ff47ebe4e1eb39" container-iid="22d8bb3943a94bb3b15b572c9f9b4294" creation-date="10/18/2018 15:05:27" order-index="8" type="entity">
+            <layout ax="81" ay="296.1855" awidth="20" aheight="170.375" x="81" y="296.1855" width="20" height="170.375" />
+          </item>
+          <item id="068c621179164020b0050c4a88a85777" iid="13bf3a9bc14c4cac955f3ff274b47a7a" creation-date="10/18/2018 15:05:27" order-index="9" type="sequence-action">
+            <layout x1="101" y1="416.5605" x2="101" y2="466.5605" ax="101" ay="416.5605" awidth="100" aheight="50" x="101" y="416.5605" width="100" height="50" message-x="0" message-y="-38" />
+            <sequence-action from="f7d733ed617f4f72a415a09c9204e320" to="f7d733ed617f4f72a415a09c9204e320" show-sequence-number="false" />
+          </item>
+          <item id="c323256ad86947e1a4a015bc8f59cfc9" iid="dae62c6e595b4f6c878ed9792c3e2ce1" container="7fac25e50bdf4c83a1a79d4944df5053" container-iid="537ebec94f1a403ab3a0aeafc5be3384" anchor="None" creation-date="10/18/2018 15:16:21" order-index="10" type="entity">
+            <layout ax="355" ay="331" awidth="20" aheight="151" x="355" y="331" width="20" height="151" />
+          </item>
+          <item id="18895a6668bb46c08181767ea03c4441" iid="b4f1106ea4bd4ab4a117d7abf693afee" creation-date="10/18/2018 15:16:38" order-index="11" type="sequence-action">
+            <layout x1="355" y1="383.5605" x2="101" y2="383.5605" ax="101" ay="368.5605" awidth="254" aheight="20" x="101" y="368.5605" width="254" height="20" message-x="-1" message-y="-10" />
+            <sequence-action from="c323256ad86947e1a4a015bc8f59cfc9" to="f7d733ed617f4f72a415a09c9204e320" show-sequence-number="false" />
+          </item>
+          <item id="c6181c3e9d9849668f5f44ffa7d06e28" iid="db3464277be84ad6ba78842ac466c653" container="d0f13b8052a94c1aa53d6db796461ad3" container-iid="f1f8e2b36e274636a0c01a5589c678f9" creation-date="10/18/2018 15:18:06" order-index="12" type="entity">
+            <layout ax="633" ay="682.4961" awidth="20" aheight="126.4961" x="633" y="682.4961" width="20" height="126.4961" />
+          </item>
+          <item id="2af933afb8494b66a7878cc798120962" iid="28e6c3f2bfb4446dbfb00c2709f64254" creation-date="10/18/2018 15:18:06" order-index="13" type="sequence-action">
+            <layout x1="653" y1="758.9922" x2="653" y2="808.9922" ax="653" ay="758.9922" awidth="100" aheight="50" x="653" y="758.9922" width="100" height="50" message-x="6" message-y="-47" />
+            <sequence-action from="c6181c3e9d9849668f5f44ffa7d06e28" to="c6181c3e9d9849668f5f44ffa7d06e28" show-sequence-number="false" />
+          </item>
+          <item id="5322ed7c33a843b6a19f1e75b1f88ff8" iid="5b90986a5b1b4c88b3eb3f041994df36" anchor="None" creation-date="10/18/2018 15:19:02" order-index="14" type="entity">
+            <layout ax="493" ay="610.1211" awidth="300" aheight="377" x="493" y="610.1211" width="300" height="377" />
+          </item>
+          <item id="78c53a015efa48bd89fb327831ad943b" iid="505377596c694a4a8256b10a7fb8fb04" container="5322ed7c33a843b6a19f1e75b1f88ff8" container-iid="5b90986a5b1b4c88b3eb3f041994df36" creation-date="10/18/2018 15:22:33" order-index="15" type="entity">
+            <layout ax="493" ay="837" awidth="300" aheight="150.1211" x="493" y="714" width="300" height="273.1211" />
+          </item>
+          <item id="23ad221b190e4d74b36e24164ef39056" iid="e32635371c5240498754a464575e9947" anchor="None" creation-date="10/18/2018 15:24:44" order-index="16" type="entity">
+            <layout ax="56" ay="250.4375" awidth="344" aheight="238" x="56" y="250.4375" width="344" height="238" />
+          </item>
+          <item id="c212128176bf42e7865605be6d67aa41" iid="962f567962234d8491ed73aad3c7c648" container="5322ed7c33a843b6a19f1e75b1f88ff8" container-iid="5b90986a5b1b4c88b3eb3f041994df36" creation-date="10/18/2018 15:28:21" order-index="18" type="entity">
+            <layout ax="493" ay="633.9922" awidth="300" aheight="203.0078" x="493" y="633.9922" width="300" height="203.0078" />
+          </item>
+          <item id="557903499bd44cc2a97a12074acf2edc" iid="67117ab01e364d1a8c80705223dc55a2" anchor="None" creation-date="10/18/2018 15:30:16" order-index="19" type="entity">
+            <layout ax="451" ay="554.1211" awidth="415" aheight="551" x="451" y="554.1211" width="415" height="551" />
+          </item>
+          <item id="7810087c2cb4471faac626b21856d4dc" iid="15be3f80ab9349e3b90d5e67683bb845" container="557903499bd44cc2a97a12074acf2edc" container-iid="67117ab01e364d1a8c80705223dc55a2" creation-date="10/18/2018 15:30:40" order-index="20" type="entity">
+            <layout ax="451" ay="577.9922" awidth="415" aheight="527.1289" x="451" y="577.9922" width="415" height="527.1289" />
+          </item>
+          <item id="d8b16603224e40d9ae86d4c6f50741be" iid="edbcb6aaf0e0478ba35221ac26e559ca" container="7fac25e50bdf4c83a1a79d4944df5053" container-iid="537ebec94f1a403ab3a0aeafc5be3384" anchor="None" creation-date="10/18/2018 15:34:11" order-index="21" type="entity">
+            <layout ax="355" ay="597" awidth="20" aheight="370.1211" x="355" y="597" width="20" height="370.1211" />
+          </item>
+          <item id="2f496f30ba4444a9a92e1d07fccef444" iid="c1de484eb49d453ca3f1bdf7356fcaf0" creation-date="10/18/2018 15:34:17" order-index="22" type="sequence-action">
+            <layout x1="633" y1="892.0605" x2="375" y2="892.0605" ax="375" ay="877.0605" awidth="258" aheight="20" x="375" y="877.0605" width="258" height="20" message-x="65" message-y="-6" />
+            <sequence-action from="74abc1cfbe5146018b35f61dfce42680" to="d8b16603224e40d9ae86d4c6f50741be" show-sequence-number="false" />
+          </item>
+          <item id="74abc1cfbe5146018b35f61dfce42680" iid="40632c0058aa44229dcff669ca69c276" creation-date="10/18/2018 15:34:17" order-index="23" type="entity">
+            <layout ax="633" ay="892.0605" awidth="20" aheight="40" x="633" y="892.0605" width="20" height="40" />
+          </item>
+          <item id="1c9c0c08a5ce407d86bbe300d8ec65df" iid="ae8c8c11863747f0a6a02f4368d6115a" container="cf2b40e9b91f48dd99ff47ebe4e1eb39" container-iid="22d8bb3943a94bb3b15b572c9f9b4294" anchor="None" creation-date="10/18/2018 15:35:23" order-index="24" type="entity">
+            <layout ax="81" ay="952.1211" awidth="20" aheight="50" x="81" y="952.1211" width="20" height="50" />
+          </item>
+          <item id="4ad93a413d2e4d3bb7385b474850cce2" iid="9a2a577436ad42b490d448c4999bbae5" creation-date="10/18/2018 15:35:26" order-index="25" type="sequence-action">
+            <layout x1="355" y1="967.1211" x2="101" y2="967.1211" ax="101" ay="952.1211" awidth="254" aheight="20" x="101" y="952.1211" width="254" height="20" message-x="-17" message-y="-16" />
+            <sequence-action from="d8b16603224e40d9ae86d4c6f50741be" to="1c9c0c08a5ce407d86bbe300d8ec65df" show-sequence-number="false" />
+          </item>
+          <item id="2d524153ae724330b97bec7398f01430" iid="61968b6f04b74b44810cbe6bd94944d1" container="d0f13b8052a94c1aa53d6db796461ad3" container-iid="f1f8e2b36e274636a0c01a5589c678f9" creation-date="10/18/2018 15:37:44" order-index="26" type="entity">
+            <layout ax="633" ay="1036.25" awidth="20" aheight="50" x="633" y="1036.25" width="20" height="50" />
+          </item>
+          <item id="c3cae27e21b54c3e904f02121bfa2f06" iid="8112c4b50099458b9735a4f0fef0196a" creation-date="10/18/2018 15:37:44" order-index="27" type="sequence-action">
+            <layout x1="653" y1="1036.25" x2="653" y2="1086.25" ax="653" ay="1036.25" awidth="100" aheight="50" x="653" y="1036.25" width="100" height="50" message-x="-1" message-y="-37" />
+            <sequence-action from="2d524153ae724330b97bec7398f01430" to="2d524153ae724330b97bec7398f01430" show-sequence-number="false" />
+          </item>
+          <item id="ddb671bde8004b97b8d30ead94d17cb9" iid="42993094c38a435e879e7907b90085b2" container="23ad221b190e4d74b36e24164ef39056" container-iid="e32635371c5240498754a464575e9947" creation-date="10/18/2018 15:24:48" order-index="17" type="entity">
+            <layout ax="56" ay="274.3086" awidth="344" aheight="214.1289" x="56" y="274.3086" width="344" height="214.1289" />
+          </item>
+          <item id="2db6dbbca5f74643aa8f7ecd6c33dfe2" iid="e15f178b52c74dba83046d78f414780b" creation-date="10/18/2018 15:45:44" order-index="29" type="sequence-action">
+            <layout x1="633" y1="473" x2="375" y2="473" ax="375" ay="458" awidth="258" aheight="20" x="375" y="458" width="258" height="20" message-x="19" message-y="-10" />
+            <sequence-action from="4477411316554e99b3024b0495aeff88" to="c323256ad86947e1a4a015bc8f59cfc9" show-sequence-number="false" />
+          </item>
+          <item id="4477411316554e99b3024b0495aeff88" iid="bb4b3d6088814f63bcf6a4e2090014e4" container="d0f13b8052a94c1aa53d6db796461ad3" container-iid="f1f8e2b36e274636a0c01a5589c678f9" creation-date="10/18/2018 15:45:44" order-index="30" type="entity">
+            <layout ax="633" ay="473" awidth="20" aheight="69" x="633" y="473" width="20" height="69" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
