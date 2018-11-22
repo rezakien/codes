@@ -12,3 +12,17 @@ C:\Users\Reza\source\repos\ПИС\5 Семестр\GameMontebank\GameMontebank\b
 C:\Users\Reza\source\repos\ПИС\5 Семестр\GameMontebank\GameMontebank\bin\Debug\MetroFramework.dll
 C:\Users\Reza\source\repos\ПИС\5 Семестр\GameMontebank\GameMontebank\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\Reza\source\repos\ПИС\5 Семестр\GameMontebank\GameMontebank\obj\Debug\GameMontebank.csproj.CopyComplete
+C:\Users\Reza\source\repos\ПИС\5 Семестр\GameMontebank Without DS\GameMontebank\GameMontebank\bin\Debug\GameMontebank.exe.config
+C:\Users\Reza\source\repos\ПИС\5 Семестр\GameMontebank Without DS\GameMontebank\GameMontebank\bin\Debug\GameMontebank.exe
+C:\Users\Reza\source\repos\ПИС\5 Семестр\GameMontebank Without DS\GameMontebank\GameMontebank\bin\Debug\GameMontebank.pdb
+C:\Users\Reza\source\repos\ПИС\5 Семестр\GameMontebank Without DS\GameMontebank\GameMontebank\bin\Debug\MetroFramework.Design.dll
+C:\Users\Reza\source\repos\ПИС\5 Семестр\GameMontebank Without DS\GameMontebank\GameMontebank\bin\Debug\MetroFramework.dll
+C:\Users\Reza\source\repos\ПИС\5 Семестр\GameMontebank Without DS\GameMontebank\GameMontebank\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Reza\source\repos\ПИС\5 Семестр\GameMontebank Without DS\GameMontebank\GameMontebank\obj\Debug\GameMontebank.csprojAssemblyReference.cache
+C:\Users\Reza\source\repos\ПИС\5 Семестр\GameMontebank Without DS\GameMontebank\GameMontebank\obj\Debug\GameMontebank.Game.resources
+C:\Users\Reza\source\repos\ПИС\5 Семестр\GameMontebank Without DS\GameMontebank\GameMontebank\obj\Debug\GameMontebank.Properties.Resources.resources
+C:\Users\Reza\source\repos\ПИС\5 Семестр\GameMontebank Without DS\GameMontebank\GameMontebank\obj\Debug\GameMontebank.csproj.GenerateResource.cache
+C:\Users\Reza\source\repos\ПИС\5 Семестр\GameMontebank Without DS\GameMontebank\GameMontebank\obj\Debug\GameMontebank.csproj.CoreCompileInputs.cache
+C:\Users\Reza\source\repos\ПИС\5 Семестр\GameMontebank Without DS\GameMontebank\GameMontebank\obj\Debug\GameMontebank.csproj.CopyComplete
+C:\Users\Reza\source\repos\ПИС\5 Семестр\GameMontebank Without DS\GameMontebank\GameMontebank\obj\Debug\GameMontebank.exe
+C:\Users\Reza\source\repos\ПИС\5 Семестр\GameMontebank Without DS\GameMontebank\GameMontebank\obj\Debug\GameMontebank.pdb
