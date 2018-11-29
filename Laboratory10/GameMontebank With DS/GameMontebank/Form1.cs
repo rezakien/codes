@@ -251,27 +251,47 @@ namespace GameMontebank
             {
                 if (i.Win)
                 {
+                    try
+                    {
                     sql.Open();
                     i.Gamer.Cash += res;
                     int id_player = i.Gamer.ID;
                     int result = UpdateAccount(id_player, res);
                     sql.Close();
-                    sql.Close();
+                    }
+                    catch (SqlException ex)
+                    {
+                        MessageBox.Show("There's a problem : " + ex.Message);
+                    }
                 }
                 else
                 {
                     int id_player = i.Gamer.ID;
-                    sql.Open();
-                    int result = UpdateAccount(id_player, -res);
-                    sql.Close();
+                    try
+                    {
+                        sql.Open();
+                        int result = UpdateAccount(id_player, -res);
+                        sql.Close();
+                    }
+                    catch (SqlException ex)
+                    {
+                        MessageBox.Show("There's a problem : " + ex.Message);
+                    }
                 }
             }
             if (k == 0) {
-                sql.Open();
-                int id_player = int.Parse(SelectPlayer(s.croupier.Name).ToString());
-                UpdateAccount(id_player, res);
-                s.croupier.LostBets += res;
-                sql.Close();
+                try
+                {
+                    sql.Open();
+                    int id_player = int.Parse(SelectPlayer(s.croupier.Name).ToString());
+                    UpdateAccount(id_player, res);
+                    s.croupier.LostBets += res;
+                    sql.Close();
+                }
+                catch(SqlException ex)
+                {
+                    MessageBox.Show("There's a problem : " + ex.Message);
+                }
             }
         }
         public void DistrCards()
@@ -602,15 +622,22 @@ namespace GameMontebank
         }
         private DataTable GetUsers()
         {
-            sql.Open();
-            string sqlExpression = "Select_All_Users";
-            SqlCommand command = new SqlCommand(sqlExpression, sql);
-            
-            command.CommandType = System.Data.CommandType.StoredProcedure;
-            DataTable myTable = new DataTable();
-            myTable.Load(command.ExecuteReader());
-            sql.Close();
-            return myTable;
+            try
+            {
+                sql.Open();
+                string sqlExpression = "Select_All_Users";
+                SqlCommand command = new SqlCommand(sqlExpression, sql);
+
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+                DataTable myTable = new DataTable();
+                myTable.Load(command.ExecuteReader());
+                sql.Close();
+                return myTable;
+            }
+            catch(SqlException ex) {
+                MessageBox.Show(ex.Message);
+            }
+            return null;
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -628,35 +655,42 @@ namespace GameMontebank
                 case "Add":
                     string name = Namee.Text;
                     double cash = double.Parse(Cash.Text);
-                    sql.Open();
-                    var queryExecute = SelectPlayer(name);
-                    if (int.Parse(queryExecute.ToString()) == 0)
+                    try
                     {
-                        if (cash>s.SessionCashLimit/3)
+                        sql.Open();
+                        var queryExecute = SelectPlayer(name);
+                        if (int.Parse(queryExecute.ToString()) == 0)
                         {
-                            int Player_ID = AddPlayer(name); // ID of Player
-                            int Account_ID = AddAccount(Player_ID, cash); // ID of Account
+                            if (cash > s.SessionCashLimit / 3)
+                            {
+                                int Player_ID = AddPlayer(name); // ID of Player
+                                int Account_ID = AddAccount(Player_ID, cash); // ID of Account
 
-                            Classes.Gamer gamer = new Classes.Gamer(Player_ID, Namee.Text, cash);
-                            s.AddGamers(gamer);
-                            MessageBox.Show("Добро пожаловать в игру Монтебанк для частного круга!, {0}", name);
+                                Classes.Gamer gamer = new Classes.Gamer(Player_ID, Namee.Text, cash);
+                                s.AddGamers(gamer);
+                                MessageBox.Show("Добро пожаловать в игру Монтебанк для частного круга!, {0}", name);
+                            }
+                            else
+                            {
+                                MessageBox.Show("У вас не хватает денег. Сумма денег должна " +
+                                    "быть больше трети от общей суммы допустимого бюджета игры.");
+                            }
                         }
                         else
                         {
-                            MessageBox.Show("У вас не хватает денег. Сумма денег должна " +
-                                "быть больше трети от общей суммы допустимого бюджета игры.");
+                            int Select_Player = int.Parse(SelectPlayer(name).ToString());
+                            Classes.Gamer gamer = new Classes.Gamer(Select_Player, Namee.Text, cash);
+                            s.AddGamers(gamer);
+                            MessageBox.Show("Добро пожаловать, {0}!", name);
                         }
+                        Namee.Clear();
+                        Cash.Clear();
+                        sql.Close();
                     }
-                    else
+                    catch (SqlException ex)
                     {
-                        int Select_Player = int.Parse(SelectPlayer(name).ToString());
-                        Classes.Gamer gamer = new Classes.Gamer(Select_Player, Namee.Text, cash);
-                        s.AddGamers(gamer);
-                        MessageBox.Show("Добро пожаловать, {0}!",name);
+                        MessageBox.Show("There's a problem : " + ex.Message);
                     }
-                    Namee.Clear();
-                    Cash.Clear();
-                    sql.Close();
                     break;
                 case "Start":
                     HideControls();
